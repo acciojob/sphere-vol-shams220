@@ -7,12 +7,12 @@ function volume_sphere(event) {
     const radius = Number(r.value);
 
     if (isNaN(radius) || radius <= 0) {
-        v.value = "Invalid radius";
+        v.value = "NaN";
         return;
     }
 
     const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
-    v.value = volume.toFixed(2); 
+    v.value = volume.toFixed(4); 
 }
 
 window.onload = () => {
