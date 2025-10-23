@@ -7,7 +7,7 @@ function volume_sphere() {
 
 	submitBtn.addEventListener('click',()=>{
 
-		v.value =  (Number(4 / 3) * Math.PI * Math.pow(r, 3));
+		v.value =  (Number(4 / 3) * Math.PI * Math.pow(r.value, 3));
 	})
   
 } 
